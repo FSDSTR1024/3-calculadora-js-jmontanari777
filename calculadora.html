@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+</head>
+<body>
+    <div class="calculadora">
+        <div class="display">
+            <div class="operacion" id="operacion"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="operador" onclick="setOperador('/')">/</button>
+            <button class="operador" onclick="setOperador('*')">×</button>
+            <button class="operador" onclick="backspace()">←</button>
+            
+            <button class="numero" onclick="addNumber('7')">7</button>
+            <button class="numero" onclick="addNumber('8')">8</button>
+            <button class="numero" onclick="addNumber('9')">9</button>
+            <button class="operador" onclick="setOperador('-')">-</button>
+            
+            <button class="numero" onclick="addNumber('4')">4</button>
+            <button class="numero" onclick="addNumber('5')">5</button>
+            <button class="numero" onclick="addNumber('6')">6</button>
+            <button class="operador" onclick="setOperador('+')">+</button>
+            
+            <button class="numero" onclick="addNumber('1')">1</button>
+            <button class="numero" onclick="addNumber('2')">2</button>
+            <button class="numero" onclick="addNumber('3')">3</button>
+            <button class="igual" onclick="calcular()" style="grid-row: span 2;">=</button>
+            
+            <button class="numero" onclick="addNumber('0')" style="grid-column: span 2;">0</button>
+            <button class="numero" onclick="addNumber('.')">.</button>
+        </div>
+    </div>
+    <script language="JavaScript" src="calculadora.js" type="text/javascript"></script>   
+</body>
+</html>
